@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/power234"
+    android:orientation="vertical"
+    tools:context=".moveActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:text="일일 운동량 정보"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="40dp"
+            android:textSize="30dp"
+            android:fontFamily="@font/my_font"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <ProgressBar
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progress="7"
+            android:id="@+id/progress" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/powerpower2"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/my_font"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:id="@+id/power2"
+            android:text="최근 일주일 평균 걸음 확인"
+            />
+
+    </LinearLayout>
+
+        />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:background="@drawable/customborder"
+            android:orientation="vertical"
+            android:layout_width="190dp"
+            android:layout_height="180dp">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:fontFamily="@font/my_font"
+                        android:text="현재 걸음 수 : "
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                    <TextView
+                        android:text="0"
+                        android:textSize="15dp"
+                        android:id="@+id/result01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="보"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/my_font"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:text="남은 걸음 수 :"
+                        android:fontFamily="@font/my_font"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:text="0"
+                        android:id="@+id/result02"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="보"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/my_font"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:text="누적 거리 : "
+                        android:fontFamily="@font/my_font"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    />
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:text="0"
+                        android:id="@+id/result03"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="M"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/my_font"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/customborder"
+            android:orientation="vertical"
+            android:layout_width="190dp"
+            android:layout_height="180dp">
+
+            <ProgressBar
+                android:layout_marginTop="40dp"
+                style="?android:attr/progressBarStyle"
+                android:id="@+id/summove"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:text="0"
+                    android:id="@+id/calories"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Calories"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/my_font"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

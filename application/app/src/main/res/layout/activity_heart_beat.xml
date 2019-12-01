@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/power234"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeartBeatActivity">
+
+    <TextView
+        android:text="실시간 심박수 정보"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:fontFamily="@font/my_font"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:background="@drawable/powerpower2"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="@font/my_font"
+        android:id="@+id/heartbeatState"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:text="심박 그래프 확인"
+        />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:layout_marginLeft="111dp"
+            android:text="60"
+            android:fontFamily="@font/my_font"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_marginLeft="102dp"
+            android:text="80"
+            android:textSize="15dp"
+            android:fontFamily="@font/my_font"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/manheartbeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customborder"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/image1"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:src="@drawable/power123" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="280dp"
+            android:orientation="vertical"
+            android:layout_height="200dp">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/day"
+                android:layout_marginLeft="10dp"
+                android:textSize = "20dp"
+                android:fontFamily="@font/my_font"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="200dp"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="현재 심박수 :"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/my_font"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="20dp"
+                    android:fontFamily="@font/my_font"
+                    android:layout_marginLeft="10dp"
+                    android:text="wer"
+                    android:id="@+id/result01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:textSize = "20dp"
+                android:text="정상"
+                android:id="@+id/heartState"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/my_font"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

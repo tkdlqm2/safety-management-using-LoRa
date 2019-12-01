@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/power234"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar">
+    </include>
+
+    <LinearLayout
+        android:background="@drawable/customborder"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="175dp">
+        <ImageView
+            android:id="@+id/setlocation"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/pwo"
+            android:layout_width="100dp"
+            android:onClick="onClick"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/power"
+            android:fontFamily="@font/my_font"
+            android:gravity="left|center_vertical"
+            android:onClick="onClick"
+            android:padding="13dp"
+            android:textColor="#fff"
+            android:text="위치 값 설정"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/customborder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/location"
+                android:src="@drawable/which"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@color/power"
+                android:fontFamily="@font/my_font"
+                android:onClick="onClick"
+                android:textColor="#fff"
+                android:text="위치"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:background="@drawable/customborder"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/heart"
+                android:onClick="onClick"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/power123"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@color/power"
+                android:fontFamily="@font/my_font"
+                android:onClick="onClick"
+                android:text="심박수"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/customborder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:id="@+id/summove"
+                android:onClick="onClick"
+                android:indeterminateDrawable="@drawable/cpb_3"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@color/power"
+                android:fontFamily="@font/my_font"
+                android:onClick="onClick"
+                android:textColor="#fff"
+                android:text="운동량"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

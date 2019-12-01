@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/powerpower2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".infoActivity">
+
+    <ImageView
+        android:padding="20dp"
+        android:src="@drawable/which"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:padding="30dp"
+            android:fontFamily="@font/my_font"
+            android:textSize="20dp"
+            android:text="이름  :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="power"
+            android:textSize="20dp"
+            android:fontFamily="@font/my_font"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:padding="30dp"
+            android:fontFamily="@font/my_font"
+            android:textSize="20dp"
+            android:text="나이  :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:text="power"
+            android:textSize="20dp"
+            android:fontFamily="@font/my_font"
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:padding="30dp"
+            android:fontFamily="@font/my_font"
+            android:textSize="20dp"
+            android:text="전화번호  :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:text="power"
+            android:textSize="20dp"
+            android:fontFamily="@font/my_font"
+            android:id="@+id/PhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/powerpower2"
+            android:fontFamily="@font/my_font"
+            android:text="전화걸기"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:padding="30dp"
+            android:fontFamily="@font/my_font"
+            android:textSize="20dp"
+            android:text="위치 값  :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:fontFamily="@font/my_font"
+                    android:text="위도 : "
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="power"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/my_font"
+                    android:id="@+id/which01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="~"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/my_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="power"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/my_font"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/which02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:fontFamily="@font/my_font"
+                    android:text="경도 : "
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="power"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/my_font"
+                    android:id="@+id/which03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="~"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/my_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="power"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/my_font"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/which04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change02"
+        android:fontFamily="@font/my_font"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/powerpower2"
+        android:text="위치 값 설정" />
+
+</LinearLayout>

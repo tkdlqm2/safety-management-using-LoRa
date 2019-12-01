@@ -1,0 +1,224 @@
+./
+├── Gateway
+│   ├── LoRa_Gate
+│   │   ├── Makefile
+│   │   └── sx1278.c
+│   ├── Makefile
+│   ├── dts-overlay
+│   │   ├── Makefile
+│   │   ├── README.md
+│   │   └── rpi-lora-spi-overlay.dts
+│   └── server.c
+├── README.md
+├── appServer
+│   ├── WebContent
+│   │   ├── META-INF
+│   │   │   └── MANIFEST.MF
+│   │   ├── WEB-INF
+│   │   │   ├── beat.jsp
+│   │   │   ├── lib
+│   │   │   │   ├── jdom-1.1.3.jar
+│   │   │   │   ├── jdom-2.0.2.jar
+│   │   │   │   ├── json_simple-r1.jar
+│   │   │   │   └── mysql-connector-java-8.0.12.jar
+│   │   │   └── web.xml
+│   │   ├── beat.jsp
+│   │   ├── gps.jsp
+│   │   ├── json.jsp
+│   │   ├── list.jsp
+│   │   ├── list2.jsp
+│   │   ├── move.jsp
+│   │   ├── person.jsp
+│   │   ├── power.txt
+│   │   ├── receiveData.jsp
+│   │   ├── setting.jsp
+│   │   ├── sumHeart.jsp
+│   │   └── sumMove.jsp
+│   ├── build
+│   │   └── classes
+│   │       ├── DAO
+│   │       │   ├── actionDAO.class
+│   │       │   ├── heartBeatDAO.class
+│   │       │   └── whereDAO.class
+│   │       └── DO
+│   │           ├── action.class
+│   │           ├── heartBeat.class
+│   │           └── where.class
+│   └── src
+│       ├── DAO
+│       │   ├── actionDAO.java
+│       │   ├── heartBeatDAO.java
+│       │   └── whereDAO.java
+│       └── DO
+│           ├── action.java
+│           ├── heartBeat.java
+│           └── where.java
+├── application
+│   ├── app
+│   │   ├── app.iml
+│   │   ├── build.gradle
+│   │   ├── debug
+│   │   │   ├── app-debug.apk
+│   │   │   └── output.json
+│   │   ├── libs
+│   │   │   ├── httpclient-4.2.2.jar
+│   │   │   └── httpcore-4.2.2.jar
+│   │   ├── proguard-rules.pro
+│   │   └── src
+│   │       ├── androidTest
+│   │       │   └── java
+│   │       │       └── com
+│   │       │           └── example
+│   │       │               └── hongjoonkim
+│   │       │                   └── powerlora
+│   │       │                       └── ExampleInstrumentedTest.java
+│   │       ├── debug
+│   │       │   └── res
+│   │       │       └── values
+│   │       │           └── google_maps_api.xml
+│   │       ├── main
+│   │       │   ├── AndroidManifest.xml
+│   │       │   ├── assets
+│   │       │   │   └── fonts
+│   │       │   │       └── power.ttf
+│   │       │   ├── java
+│   │       │   │   └── com
+│   │       │   │       └── example
+│   │       │   │           └── hongjoonkim
+│   │       │   │               └── powerlora
+│   │       │   │                   ├── AccessMove.java
+│   │       │   │                   ├── DTO
+│   │       │   │                   │   ├── GpsDTO.java
+│   │       │   │                   │   └── Task.java
+│   │       │   │                   ├── HeartBeat.java
+│   │       │   │                   ├── HeartBeatActivity.java
+│   │       │   │                   ├── HeartStateAlarm.java
+│   │       │   │                   ├── MainActivity.java
+│   │       │   │                   ├── MapsActivity.java
+│   │       │   │                   ├── MyService.java
+│   │       │   │                   ├── ServiceThread.java
+│   │       │   │                   ├── SplashActivity.java
+│   │       │   │                   ├── Util.java
+│   │       │   │                   ├── WhereAlaram.java
+│   │       │   │                   ├── WhereAlaram2.java
+│   │       │   │                   ├── heartgraph.java
+│   │       │   │                   ├── infoActivity.java
+│   │       │   │                   ├── moveActivity.java
+│   │       │   │                   ├── moveStateAlarm.java
+│   │       │   │                   ├── oneDayMoves.java
+│   │       │   │                   ├── setLocation3.java
+│   │       │   │                   └── whereActivty.java
+│   │       │   └── res
+│   │       │       ├── drawable
+│   │       │       │   ├── <?xml version="1.0" encoding="UTF-8"?>  <shape xmlns:android="http:
+│   │       │       │   │   └── schemas.android.com
+│   │       │       │   │       └── apk
+│   │       │       │   │           └── res
+│   │       │       │   │               └── android" android:shape="rectangle">    <corners android:radius="20dp"
+│   │       │       │   │                   └── >     <padding android:left="10dp" android:right="10dp" android:top="10dp" android:bottom="10dp"
+│   │       │       │   │                       └── >    <stroke android:width="1dp" android:color="#CCCCCC"
+│   │       │       │   │                           └── >  <
+│   │       │       │   │                               └── shape>
+│   │       │       │   ├── background.png
+│   │       │       │   ├── background1.png
+│   │       │       │   ├── background3.png
+│   │       │       │   ├── background4.png
+│   │       │       │   ├── cpb_1.xml
+│   │       │       │   ├── cpb_2.xml
+│   │       │       │   ├── cpb_3.xml
+│   │       │       │   ├── customborder.xml
+│   │       │       │   ├── grandparents.png
+│   │       │       │   ├── heart.jpg
+│   │       │       │   ├── ic_launcher_background.xml
+│   │       │       │   ├── jog.png
+│   │       │       │   ├── lora.jpg
+│   │       │       │   ├── manheartbeat.png
+│   │       │       │   ├── poster.png
+│   │       │       │   ├── power.png
+│   │       │       │   ├── power123.png
+│   │       │       │   ├── power2.jpg
+│   │       │       │   ├── power234.jpg
+│   │       │       │   ├── power3.jpg
+│   │       │       │   ├── powerpower2.jpeg
+│   │       │       │   ├── pwo.png
+│   │       │       │   ├── qwe.jpg
+│   │       │       │   ├── realheart.jpeg
+│   │       │       │   └── which.png
+│   │       │       ├── drawable-v24
+│   │       │       │   └── ic_launcher_foreground.xml
+│   │       │       ├── font
+│   │       │       │   ├── my_font.xml
+│   │       │       │   └── power.ttf
+│   │       │       ├── layout
+│   │       │       │   ├── activity_custom_listview.xml
+│   │       │       │   ├── activity_heart_beat.xml
+│   │       │       │   ├── activity_heartgraph.xml
+│   │       │       │   ├── activity_info.xml
+│   │       │       │   ├── activity_main.xml
+│   │       │       │   ├── activity_maps2.xml
+│   │       │       │   ├── activity_move.xml
+│   │       │       │   ├── activity_one_day_moves.xml
+│   │       │       │   ├── activity_set_location3.xml
+│   │       │       │   ├── activity_where_activty.xml
+│   │       │       │   ├── dialog_layout.xml
+│   │       │       │   ├── gps_row.xml
+│   │       │       │   └── toolbar.xml
+│   │       │       ├── mipmap-anydpi-v26
+│   │       │       │   ├── ic_launcher.xml
+│   │       │       │   └── ic_launcher_round.xml
+│   │       │       ├── mipmap-hdpi
+│   │       │       │   ├── ic_launcher.png
+│   │       │       │   └── ic_launcher_round.png
+│   │       │       ├── mipmap-mdpi
+│   │       │       │   ├── ic_launcher.png
+│   │       │       │   └── ic_launcher_round.png
+│   │       │       ├── mipmap-xhdpi
+│   │       │       │   ├── ic_launcher.png
+│   │       │       │   └── ic_launcher_round.png
+│   │       │       ├── mipmap-xxhdpi
+│   │       │       │   ├── ic_launcher.png
+│   │       │       │   └── ic_launcher_round.png
+│   │       │       ├── mipmap-xxxhdpi
+│   │       │       │   ├── ic_launcher.png
+│   │       │       │   └── ic_launcher_round.png
+│   │       │       └── values
+│   │       │           ├── colors.xml
+│   │       │           ├── strings.xml
+│   │       │           └── styles.xml
+│   │       ├── release
+│   │       │   └── res
+│   │       │       └── values
+│   │       │           └── google_maps_api.xml
+│   │       └── test
+│   │           └── java
+│   │               └── com
+│   │                   └── example
+│   │                       └── hongjoonkim
+│   │                           └── powerlora
+│   │                               └── ExampleUnitTest.java
+│   ├── build.gradle
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── images
+│   │   └── Network_stack.png
+│   ├── local.properties
+│   └── settings.gradle
+├── endDevice
+│   ├── LoRa_End
+│   │   ├── Makefile
+│   │   └── sx1278.c
+│   ├── Makefile
+│   ├── client.c
+│   └── dts-overlay
+│       ├── Makefile
+│       ├── README.md
+│       └── rpi-lora-spi-overlay.dts
+├── networkServer
+└── test.txt
+
+74 directories, 147 files
